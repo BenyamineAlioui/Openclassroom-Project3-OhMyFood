@@ -1,0 +1,42 @@
+.barreRecherche {
+    display: flex;
+    background-color: $colour-background-searchbar;
+    padding: 10px 90px 10px 90px;
+
+    .zoneRecherche {
+        border: none;
+        background-color: $colour-background-searchbar;
+        margin-left: 10px;
+    
+    }
+}
+
+.présentation {
+    background-color: $colour-background-color2;
+    padding: 10px 20px 40px 20px;
+}   
+
+.texte1 {
+    font-size: 25px;
+}
+
+.texte2 {
+    color: #8b8b8b;
+}
+
+.présentation p {
+    text-align: center;
+}
+
+ .btn-explorer{
+    background-color: $colour-primary;
+    padding: 10px;
+    border-radius: 20px;
+    color: $colour-white;
+    border: none;
+}
+.block-btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+}
+
+header{
+    display: flex;
+}
+
+.fa-arrow-left{
+    position: relative;
+    left: 20px; top: 18px;
+}
+
+a:visited {
+    color: black;
+  }
+
+header img {
+    max-width: 50%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 13px;
+    
+}
+
+.enTete{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.fa-heart{
+    position: relative;
+    top: 10px; right: 15px;
+}
+
+.carte {
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "img"
+    "description"
+    "description"
+    "description";
+    background-color: #f2f2f2;
+}
+.divImgMenu{
+    grid-area: img;
+    background: url(Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.divDescription{
+    background-color: #f2f2f2;
+    grid-area: description;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 15px 15px 0px 15px ;
+    position: relative;
+    bottom: 35px;
+}
+
+.sousCarte {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 7px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.paragraphe{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+h5, p {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+p {
+    font-size: smaller;
+}
+
+h2 {
+    font-family: 'Shrikhand', Arial, sans-serif;
+}
+
+.titre {
+    margin-top: 25px;
+    border-bottom: 2px solid #99E2D0;
+    width: 35px;
+    
+}
+
+.btn-explorer{
+    background-color: #9356DC;
+    padding: 12px 25px 12px 25px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+.block-btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+
+.footer {
+    background-color: rgb(54, 54, 54);
+    height: 150px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0px;
+}
+
+.footer ul a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    
+}
+
+.footer h4 {
+    color: white;
+    font-family: 'Shrikhand', Arial, sans-serif;
+    margin: 0px;
+    padding: 18px 0 0 15px;
+    font-weight: 100;
+
+}
+
+.fa-utensils {
+    color: white;
+    padding-right: 10px;
+}
+
+.fa-hands-helping {
+    color: white ;
+    padding-right: 10px;
+}
+
+@media (min-width: 601px)
+{
+    header {
+        justify-content: center;
+    }
+
+    .fa-arrow-left:before {
+        display:none
+    }
+    
+    header img {
+        width: 60%;
+        max-width: none;
+        
+    }
+
+    .carte {
+        display:grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "img"
+        "img"
+        "description"
+        "description";
+        background-color: #f2f2f2;
+        height: 160vh;
+    }
+
+    .divDescription{
+        padding-left: 30px;
+    }
+
+    .menu{
+        width: 97%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: px;
+        padding-top: 20px;
+    }
+
+    .entree, .plats, .desserts{
+        width: 28vw;
+    }
+
+    .sousCarte{
+        width: 28vw;
+        height: 40px;
+    }
+
+    .block-btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 160px;
+    }
+
+    .footer{
+        height: 200px ;
+        padding-left: 15px;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 600px)
+{   header  {
+    justify-content: space-between;
+    width: 90%;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 800px)
+{
+    .carte {
+        display:grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        
+        "img"
+        "description"
+        "description";
+        background-color: #f2f2f2;
+        height: 240vh;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-left: 60px;
+    }
+
+    .entree, .plats, .desserts{
+        width: 50vw;
+    }
+
+    .sousCarte{
+        width: 70vw;
+        height: 40px;
+    }
+
+    .block-btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+}

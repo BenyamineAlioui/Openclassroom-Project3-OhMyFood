@@ -1,0 +1,22 @@
+{
+  "name": "projet3--ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenyamineAlioui/OpenclassroomsProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenyamineAlioui/OpenclassroomsProject/issues"
+  },
+  "homepage": "https://github.com/BenyamineAlioui/OpenclassroomsProject#readme",
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
+}
