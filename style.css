@@ -1,5 +1,4 @@
 .loading{
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,34 +6,39 @@
     height: 100%;
     cursor: wait;
     background-color: #fbfbfb;
-    z-index: 10;
+    position: fixed;
     animation-name: loader;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-delay: -3s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes loader{
-    0% {
-        transform: scale(0);
+    0%{
+        z-index: 999;
+        opacity: 1;
     }
 
-    100% {
-        transform: scale(1);
+    99%{
+        z-index: 999;
+        opacity: 1;
+    }
+
+    100%{
+        z-index: -999;
         opacity: 0;
-        z-index: -1;
     }
 }
 
 .loading span{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 5px;
     background-color:#9356DC;
     border-radius: 50%;
     display: inline-block;
     animation-name: dots;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
  }
@@ -42,7 +46,7 @@
  @keyframes dots{
     50%{
         opacity: 0;
-        transform: scale(0.7) translate(10px);
+        transform: scale(0.7) translateY(10px);
     }
 }
 
@@ -53,8 +57,9 @@
 
  .loading span:nth-child(3) {
     background-color: #99E2D0;
-    animation-delay: 0.5s;
+    animation-delay: 0.8s;
 }
+
 
 body {
     margin: 0px;
@@ -112,6 +117,12 @@ a:visited {
     color: white;
     border: none;
     box-shadow: 0px 0px 6px 0px #0000002e;
+    transition: 0.4s;
+}
+
+.btn-explorer:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .block-btn{
@@ -120,7 +131,10 @@ a:visited {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    
 }
+
+
 
 .section1{
     padding: 20px;
@@ -208,7 +222,12 @@ h2 {
     "description"; 
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 40vh;
-    
+    transition: 0.4s;
+}
+
+.carte1:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .carte1 a 
@@ -246,6 +265,12 @@ h2 {
     "description"; 
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 40vh;
+    transition: 0.4s;
+}
+
+.carte2:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .carte2 a
@@ -282,6 +307,12 @@ h2 {
     "description"; 
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 40vh;
+    transition: 0.4s;
+}
+
+.carte3:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .carte3 a
@@ -317,6 +348,12 @@ h2 {
     "description"; 
     box-shadow: 0px 0px 6px 0px #0000002e;
     height: 40vh;
+    transition: 0.4s;
+}
+
+.carte4:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .carte4 a
@@ -362,15 +399,22 @@ p {
 .fa-heart {
     position: relative;
     top: 10px;
-    
+    left: 2px;
 }
 
-.fa-heart::before:hover
-{
-    cursor: pointer;
-    background-color: #9356DC ;
-    overflow: hidden;
+.divDescription i:hover{
+    display: none;
+}
 
+.heart2{
+    position: relative;
+    top: 10px;
+    left: 2px;
+    display: none;
+}
+
+.heart2:hover{
+    display: inline-block;
 }
 
 .nouveau {
