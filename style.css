@@ -60,7 +60,6 @@
     animation-delay: 0.8s;
 }
 
-
 body {
     margin: 0px;
     z-index: 1;
@@ -133,8 +132,6 @@ a:visited {
     width: 60%;
     
 }
-
-
 
 .section1{
     padding: 20px;
@@ -243,7 +240,6 @@ h2 {
 
 .carte1 .divDescription
 {   
-    
     grid-area: description;
     font-size: 15px;
     background-color: white; 
@@ -392,29 +388,38 @@ h2 {
     width: 92%;
 }
 
+.sousdivDescription{
+    width: 150px;
+}
+
 p {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-.fa-heart {
+.heart1 {
     position: relative;
     top: 10px;
-    left: 2px;
 }
 
-.divDescription i:hover{
+.heart1:hover{
     display: none;
 }
 
 .heart2{
     position: relative;
     top: 10px;
-    left: 2px;
-    display: none;
+    right: 20px;
+    opacity: 0;
+    color: #9356DC;
 }
 
 .heart2:hover{
-    display: inline-block;
+    opacity: 1;
+}
+
+.heartDiv{
+    display: flex;
+    width: 22px;
 }
 
 .nouveau {

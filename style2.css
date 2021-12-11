@@ -25,19 +25,39 @@ header img {
     display: block;
     margin-left:auto;
     margin-right: auto;
-    padding: 13px;
-    
+    padding: 13px;  
 }
 
 .enTete{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
 }
-.fa-heart{
+
+.heart1{
     position: relative;
-    top: 10px; right: 15px;
+    top: 10px; 
+}
+
+.heart1:hover{
+    display: none;
+}
+
+.heart2{
+    position: relative;
+    top: 10px; 
+    right: 21px;
+    opacity: 0;
+    color: #9356DC;
+}
+
+.heart2:hover{
+    opacity: 1;
+}
+
+.heartDiv{
+    display: flex;
+    width: 22px;
 }
 
 .carte {
@@ -51,6 +71,7 @@ header img {
     "description";
     background-color: #f2f2f2;
 }
+
 .divImgMenu{
     grid-area: img;
     background: url(Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -68,21 +89,141 @@ header img {
     bottom: 35px;
 }
 
-.sousCarte {
+.sousCarte1, .sousCarte2, .sousCarte3, .sousCarte4, .sousCarte5, .sousCarte6, .sousCarte7, .sousCarte8, .sousCarte9, .sousCarte10{
+    animation-name: transition;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    height: 50px;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid f2f2f2;
     border-radius: 10px;
     margin-bottom: 5px;
     margin-top: 10px;
-    padding: 7px;
     box-shadow: 0px 0px 6px 0px #0000002e;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes transition{
+    100%{
+        opacity: 1;
+    }
+}
+
+.sousCarte1{
+    animation-delay: 0.25s; 
+    transform: translateY(5px);
+}
+
+.sousCarte2{
+    animation-delay: 0.5s;
+    transform: translateY(5px);
+}
+
+.sousCarte3{
+    animation-delay: 0.75s;
+    transform: translateY(5px);
+}
+
+.sousCarte4{
+    animation-delay: 1s;
+    transform: translateY(5px);
+}
+
+.sousCarte5{
+    animation-delay: 1.25s;
+    transform: translateY(5px);
+}
+
+.sousCarte6{
+    animation-delay: 1.5s;
+    transform: translateY(5px);
+}
+
+.sousCarte7{
+    animation-delay: 1.75s;
+    transform: translateY(5px);
+}
+
+.sousCarte8{
+    animation-delay: 2s;
+    transform: translateY(5px);
+}
+
+.sousCarte9{
+    animation-delay: 2.25s;
+    transform: translateY(5px);
+}
+
+.sousCarte10{
+    animation-delay: 2.50s;
+    transform: translateY(5px);
+}
+
+.sousCarte1:hover, .sousCarte2:hover, .sousCarte3:hover, .sousCarte4:hover, .sousCarte5:hover, .sousCarte6:hover, .sousCarte7:hover, .sousCarte8:hover, .sousCarte9:hover, .sousCarte10:hover {
+    cursor: pointer;
+}
+
+.texteSousCarte{
+    padding: 7px;
+    width: 100%;
+}
+.sousCarte1:hover > .texteSousCarte, .sousCarte2:hover > .texteSousCarte, .sousCarte3:hover > .texteSousCarte, .sousCarte4:hover > .texteSousCarte, .sousCarte5:hover > .texteSousCarte, .sousCarte6:hover > .texteSousCarte, .sousCarte7:hover > .texteSousCarte, .sousCarte8:hover > .texteSousCarte, .sousCarte9:hover > .texteSousCarte, .sousCarte10:hover > .texteSousCarte{
+    width: 85%;
+}
+
+.checkbox{
+    background-color: #99E2D0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: scaleX(0);
+}
+
+.sousCarte1:hover > .checkbox, .sousCarte2:hover > .checkbox, .sousCarte3:hover > .checkbox, .sousCarte4:hover > .checkbox, .sousCarte5:hover > .checkbox, .sousCarte6:hover > .checkbox, .sousCarte7:hover > .checkbox, .sousCarte8:hover > .checkbox, .sousCarte9:hover > .checkbox, .sousCarte10:hover > .checkbox{
+    transform: scaleX(1);
+    transition: transform 500ms ;
+    transform-origin: right 50%;
+    width: 52px;
+}
+
+.fa-check-circle{
+    color: white;
+    position: relative;
+    left: 18px;
+    top: 17px;
+}
+
+.sousCarte1:hover .fa-check-circle, .sousCarte2:hover .fa-check-circle, .sousCarte3:hover .fa-check-circle, .sousCarte4:hover .fa-check-circle, .sousCarte5:hover .fa-check-circle, .sousCarte6:hover .fa-check-circle, .sousCarte7:hover .fa-check-circle, .sousCarte8:hover .fa-check-circle, .sousCarte9:hover .fa-check-circle, .sousCarte10:hover .fa-check-circle {
+    animation-name: rotation; 
+    animation-duration: 0.5s;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .paragraphe{
     display: flex;
     justify-content: space-between;
     padding: 0;
-    
+}
+
+.paragraphe p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.txt {
+    width: 75%;
 }
 
 h5, p {
@@ -199,8 +340,7 @@ h2 {
     .menu{
         width: 97%;
         display: flex;
-        justify-content: space-between;
-        padding-left: px;
+        justify-content: space-between; 
         padding-top: 20px;
     }
 
@@ -208,9 +348,8 @@ h2 {
         width: 28vw;
     }
 
-    .sousCarte{
+    .sousCarte1, .sousCarte2, .sousCarte3, .sousCarte4, .sousCarte5, .sousCarte6, .sousCarte7, .sousCarte8, .sousCarte9, .sousCarte10{
         width: 28vw;
-        height: 40px;
     }
 
     .block-btn{
@@ -259,9 +398,8 @@ h2 {
         width: 50vw;
     }
 
-    .sousCarte{
+    .sousCarte1, .sousCarte2, .sousCarte3, .sousCarte4, .sousCarte5, .sousCarte6, .sousCarte7, .sousCarte8, .sousCarte9, .sousCarte10{
         width: 70vw;
-        height: 40px;
     }
 
     .block-btn{
@@ -269,5 +407,13 @@ h2 {
         margin-right: auto;
         margin-top: 5px;
         margin-bottom: 40px;
+    }
+}
+@media (max-width: 380px)
+{
+    .paragraphe p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
