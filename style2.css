@@ -97,6 +97,7 @@ header img {
     animation-timing-function: ease-in-out;
     opacity: 0;
     height: 50px;
+    max-width: 99.7%;
     background-color: white;
     border: 1px solid f2f2f2;
     border-radius: 10px;
@@ -247,14 +248,17 @@ h2 {
 
 .btn-explorer{
     background-color: #9356DC;
+    transition: background-color 1s;
     padding: 12px 25px 12px 25px;
     border-radius: 20px;
     color: white;
     border: none;
+    box-shadow: 0px 0px 6px 0px #0000002e;
     transition: 0.4s;
 }
 
 .btn-explorer:hover{
+    background-image: linear-gradient( #da49ae, #9356DC);
     cursor: pointer;
     transform: scale(1.05);
 }
