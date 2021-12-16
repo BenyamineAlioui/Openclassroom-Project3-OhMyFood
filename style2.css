@@ -72,9 +72,27 @@ header img {
     background-color: #f2f2f2;
 }
 
-.divImgMenu{
+.divImgMenu1{
+    grid-area: img;
+    background: url(Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.divImgMenu2{
     grid-area: img;
     background: url(Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.divImgMenu3{
+    grid-area: img;
+    background: url(Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.divImgMenu4{
+    grid-area: img;
+    background: url(Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -211,6 +229,12 @@ header img {
     }
 }
 
+.texteSousCarte h5{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .paragraphe{
     display: flex;
     justify-content: space-between;
@@ -248,7 +272,6 @@ h2 {
 
 .btn-explorer{
     background-color: #9356DC;
-    transition: background-color 1s;
     padding: 12px 25px 12px 25px;
     border-radius: 20px;
     color: white;
@@ -270,6 +293,12 @@ h2 {
     margin-bottom: 60px;
 }
 
+#btn-LNE{
+    margin-left: 34%;
+    margin-right: none;
+    margin-top:60px
+}
+
 .footer {
     background-color: rgb(54, 54, 54);
     height: 150px;
@@ -285,7 +314,7 @@ h2 {
     text-decoration: none;
     color: white;
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     
 }
 
@@ -363,6 +392,13 @@ h2 {
         margin-bottom: 160px;
     }
 
+    #btn-LNE{
+        margin-left: 42%;
+        margin-right: none;
+        margin-top:60px;
+        margin-bottom:60px
+    }
+
     .footer{
         height: 200px ;
         padding-left: 15px;
@@ -371,7 +407,8 @@ h2 {
 }
 
 @media (min-width: 450px) and (max-width: 600px)
-{   header  {
+{   
+    header {
     justify-content: space-between;
     width: 90%;
     }
@@ -385,21 +422,22 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
-        
         "img"
         "description"
         "description";
         background-color: #f2f2f2;
-        height: 240vh;
+        height: 255vh;
     }
 
     .menu{
         flex-direction: column;
-        margin-left: 60px;
+        margin:auto;
+        width: 80%;
     }
 
     .entree, .plats, .desserts{
         width: 50vw;
+        margin: auto;
     }
 
     .sousCarte1, .sousCarte2, .sousCarte3, .sousCarte4, .sousCarte5, .sousCarte6, .sousCarte7, .sousCarte8, .sousCarte9, .sousCarte10{
@@ -410,14 +448,45 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         margin-top: 5px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 }
-@media (max-width: 380px)
+
+@media (min-width: 801px)
+{   
+    .carte{
+        height: 175vh;
+    }
+
+    .footer h4{
+        text-align:center;
+    }
+
+    .footer ul{
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        margin-top: 30px;
+    }
+
+    .footer ul a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 370px)
 {
-    .paragraphe p{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+    .texteSousCarte h5{
+        width: 65%;
+    }
+
+    .txt{
+        width: 65%;
+    }
+
+    .sousCarte1, .sousCarte2, .sousCarte3, .sousCarte4, .sousCarte5, .sousCarte6, .sousCarte7, .sousCarte8, .sousCarte9, .sousCarte10{
+        width: 94vw;
     }
 }
