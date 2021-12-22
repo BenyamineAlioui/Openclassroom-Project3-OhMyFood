@@ -271,7 +271,7 @@ h2 {
 }
 
 .btn-explorer{
-    background-color: #9356DC;
+    background-image: linear-gradient( #da49ae, #9356DC);
     padding: 12px 25px 12px 25px;
     border-radius: 20px;
     color: white;
@@ -281,7 +281,7 @@ h2 {
 }
 
 .btn-explorer:hover{
-    background-image: linear-gradient( #da49ae, #9356DC);
+    filter: brightness(1.18);
     cursor: pointer;
     transform: scale(1.05);
 }
