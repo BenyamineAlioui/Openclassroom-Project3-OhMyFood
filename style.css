@@ -411,11 +411,12 @@ p {
     position: relative;
     top: 17px;
     height: 18px;
+    opacity: 1;
     
 }
 
 .heart1:hover{
-    color:white;
+    opacity: 0;
 }
 
 .heart2{

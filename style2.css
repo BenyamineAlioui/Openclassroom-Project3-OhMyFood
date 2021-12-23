@@ -37,6 +37,7 @@ header img {
 .heart1{
     position: relative;
     top: 10px; 
+    height: 18px;
 }
 
 .heart1:hover{
@@ -48,7 +49,11 @@ header img {
     top: 10px; 
     right: 21px;
     opacity: 0;
-    color: #9356DC;
+    background-image: linear-gradient(#9356dc 30%, #ff79da 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    height: 18px;
 }
 
 .heart2:hover{
@@ -276,7 +281,6 @@ h2 {
     border-radius: 20px;
     color: white;
     border: none;
-    box-shadow: 0px 0px 9px 0px #000000;
     transition: 0.4s;
 }
 
@@ -284,6 +288,7 @@ h2 {
     filter: brightness(1.18);
     cursor: pointer;
     transform: scale(1.05);
+    box-shadow: 0px 0px 9px 0px #000000;
 }
 
 .block-btn{
